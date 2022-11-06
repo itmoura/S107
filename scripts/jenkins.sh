@@ -1,1 +1,1 @@
-echo "Mandando e-mail com o mail do linux" | mail -s "subject: qualquer coisa"
+echo "Pipeline rodada com sucesso!" | mail -s "subject: Pipeline rodada com sucesso!" $JENKINS_EMAIL
