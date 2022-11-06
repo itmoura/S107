@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nome": "Chris",
+    "horario": "8:00 - 12:00",
+    "periodo": "INTEGRAL"
+  },
+  {
+    "id": 2,
+    "nome": "João",
+    "horario": "8:00 - 12:00",
+    "periodo": "NOTURNO"
+  },
+  {
+    "id": 3,
+    "nome": "Pedro",
+    "horario": "8:00 - 12:00",
+    "periodo": "NOTURNO"
+  }
+]
