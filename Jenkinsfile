@@ -27,7 +27,6 @@ pipeline {
         stage('Notification') {
             steps {
                 echo 'Sending email....'
-                echo 'Email: $JENKINS_EMAIL'
                 sh '''
                     cd scripts/
                     chmod 775 *
