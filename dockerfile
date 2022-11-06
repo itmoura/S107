@@ -14,10 +14,13 @@ RUN mkdir /opt/gradle
 RUN unzip -d /opt/gradle gradle-7.5.1-bin.zip
 RUN ls /opt/gradle/gradle-7.5.1
 
-# Define uma variavel de ambiente GRADLE_HOME que aponta para o local do maven
+# Define uma variavel de ambiente GRADLE_HOME que aponta para o local do GRADLE
 ENV GRADLE_HOME=/opt/gradle/gradle-7.5.1
 ENV PATH=$PATH:$GRADLE_HOME/bin
 RUN gradle -version
+
+# Define o email do usuario
+ENV JENKINS_EMAIL=italo.moura1201@outlook.com
 
 # chown: comando linux que muda o dono de uma pasta. Nesse caso estamos dando permissao para o usuario jenkins
 RUN chown -R jenkins:jenkins /opt/gradle

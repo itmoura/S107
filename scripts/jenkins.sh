@@ -1,1 +1,1 @@
-echo "Mandando e-mail com o mail do linux" | mail -s "subject: qualquer coisa" italomoura@ges.inatel.br
+echo "Mandando e-mail com o mail do linux" | mail -s "subject: qualquer coisa" italo.moura1201@outlook.com

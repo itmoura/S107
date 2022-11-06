@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        JENKINS_EMAIL = "${env.JENKINS_EMAIL}"
+    }
+
     stages {
         stage('Build') {
             steps {
@@ -23,10 +27,11 @@ pipeline {
         stage('Notification') {
             steps {
                 echo 'Sending email....'
+                echo 'Email: $JENKINS_EMAIL'
                 sh '''
                     cd scripts/
                     chmod 775 *
-                    ./jenkins.sh
+                    ./jenkins.sh $JENKINS_EMAIL
                    '''
             }
         }
